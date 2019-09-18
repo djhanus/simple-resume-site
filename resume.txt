@@ -2,10 +2,81 @@
 
 ## Places of Previous Employment
 
-## Skills
+### Blueline Media
+
+- 2016-Present
+- Senior Developer
+- Technical lead on all web projects, front-end developer
+
+### Google Street View
+
+- 2013-2016
+- Photographer
+- High Dynamic Range Panoramic Photography for Businesses
+
+### Sparkfactor
+
+- 2010-2016
+- Web Designer
+- Front end development and project management
+
+### Windy City Labs
+
+- 2009-2015
+- Web Design & Photography
+- 
+
+## Core Skills
+
+- Web Development
+- Server Administration
+- Project Management
+
+- taking designs and creating responsive websites
+- managing and updating client websites
+- managing and maintaing client web servers
+
+## Other Skills
+
+- Responsive Web Design
+- Photography
+- Video Production
+- SEO, Marketing, Advertising
+
+## Software & Languages
+
+- HTML, CSS, PHP, JS
+- Git, Sass, CLI
+- Wordpress, Drupal, CMS
+- PHPMyAdmin, MySQL, Apache
+- Photoshop, Illustrator, InDesign
+- Mac OSX, Linux, Windows
+
+## Personal Strengths
+
+- keen attention for detail
+- creative problem solving
+- strong organizational habits
+
 
 ## Experience
 
+
 ## Academic Accomplishments
 
+- IU BFA 2009
+
+
+## Clients
+
+- Bloomington Health Foundation
+- Cardinal Stage
+- American Libraries Magazine
+- Special Olympics Illinois
+- Polish Roman Catholic Union of America
+
 ## References
+
+- Ryan Irvin
+- Kim Alpert
+- George Lowe
