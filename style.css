@@ -1,0 +1,333 @@
+/*
+ Theme Name:   WP Starter Theme
+ Theme URI:    local
+ Description:  starter theme for custom wp sites
+ Author:       DJH
+ Author URI:   https://thisisblueline.com
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* RESET */
+@import url("mobile.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, sans;
+  background: #FFFFFF;
+  height: auto;
+  line-height: 1.2;
+}
+html p,
+body p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+  color: black;
+  padding-bottom: 20px;
+}
+html h1,
+body h1 {
+  font-size: 32px;
+  margin: 15px 0px;
+  color: black;
+  font-weight: bold;
+}
+html h2,
+body h2 {
+  font-size: 28px;
+  margin: 15px 0px;
+  color: black;
+  font-weight: normal;
+}
+html h3,
+body h3 {
+  font-size: 22px;
+  margin: 15px 0px;
+  color: black;
+  font-weight: normal;
+}
+html ul, html ol,
+body ul,
+body ol {
+  margin: 10px 25px;
+  color: black;
+}
+html ul li, html ol li,
+body ul li,
+body ol li {
+  padding-bottom: 10px;
+}
+html img.alignright,
+body img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+  height: auto;
+  max-width: 350px;
+}
+html img.alignleft,
+body img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+  height: auto;
+  max-width: 350px;
+}
+html img.aligncenter,
+body img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+  height: auto;
+  max-width: 550px;
+}
+html blockquote,
+body blockquote {
+  padding: 25px 30px;
+  margin: 15px;
+  font-style: italic;
+}
+html strong,
+body strong {
+  font-weight: bold;
+}
+html em,
+body em {
+  font-style: italic;
+}
+
+main {
+  position: relative;
+  background: white;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  z-index: 1000;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: #FFFFFF;
+  width: 100%;
+  height: 150px;
+}
+header img {
+  width: 300px;
+  height: auto;
+  padding: 15px 10px;
+  margin: 0 0 0 25px;
+}
+header .main-menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+header .main-menu-container .main-menu {
+  margin-left: auto;
+}
+header .main-menu-container .main-menu ul {
+  display: inline-flex;
+  margin-right: 25px;
+}
+header .main-menu-container .main-menu ul li a {
+  position: relative;
+  font-size: 18px;
+  font-family: Arial, sans;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 15px;
+  margin: 0px 5px;
+}
+header .main-menu-container .main-menu ul li a:hover {
+  color: cyan;
+}
+header .mobile-menu-container {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  text-align: center;
+  transform: translate(-100%, 0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-top: 75px;
+}
+header .mobile-menu-container .mobile-menu ul li {
+  margin: 10px 0;
+}
+header .mobile-menu-container .mobile-menu ul li a {
+  text-transform: uppercase;
+  color: black;
+  font-size: 22px;
+  font-weight: 800;
+}
+header .mobile-menu-container .mobile-menu ul li a:hover {
+  color: white;
+}
+header .mobile-menu-container .social-icons {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+header .mobile-menu-container .social-icons i,
+header .mobile-menu-container .social-icons svg {
+  color: white;
+  font-size: 40px;
+}
+header .mobile-menu-container .social-icons i:hover,
+header .mobile-menu-container .social-icons svg:hover {
+  color: cyan;
+}
+header .hamburger-wrapper {
+  z-index: 100000;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  margin: auto;
+  width: 40px;
+  height: 26px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  header .hamburger-wrapper {
+    display: none;
+  }
+}
+header .hamburger-menu,
+header .hamburger-menu,
+header .hamburger-menu {
+  width: 40px;
+  height: 4px;
+  position: relative;
+  transform: translateY(11px);
+  background: white;
+  transition: all 0ms 300ms;
+}
+header .hamburger-menu:after, header .hamburger-menu:before,
+header .hamburger-menu:after,
+header .hamburger-menu:before,
+header .hamburger-menu:after,
+header .hamburger-menu:before {
+  width: 40px;
+  height: 4px;
+}
+header .hamburger-menu.animate,
+header .hamburger-menu.animate,
+header .hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+header .hamburger-menu.animate:after, header .hamburger-menu.animate:before,
+header .hamburger-menu.animate:after,
+header .hamburger-menu.animate:before,
+header .hamburger-menu.animate:after,
+header .hamburger-menu.animate:before {
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+header .hamburger-menu.animate:after,
+header .hamburger-menu.animate:after,
+header .hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+}
+header .hamburger-menu.animate:before,
+header .hamburger-menu.animate:before,
+header .hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+header .hamburger-menu:before, header .hamburger-menu:after,
+header .hamburger-menu:before,
+header .hamburger-menu:after,
+header .hamburger-menu:before,
+header .hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: white;
+}
+header .hamburger-menu:before,
+header .hamburger-menu:before,
+header .hamburger-menu:before {
+  bottom: 11px;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+header .hamburger-menu:after,
+header .hamburger-menu:after,
+header .hamburger-menu:after {
+  top: 11px;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/*# sourceMappingURL=style.css.map */
