@@ -87,28 +87,32 @@
 - George Lowe
 
 
-# Portfolio Website
 
-djh-creative.com
-djh-portfolio.com
-davidjhanus.info
-davidjhanus.me
 
-## NOTES:
+# WEBSITE PORTFOLIO
 
-1-pager, long scroll, each section smooth scrolls to anchor
+### Domain Names
 
-Core Content:
+- davidjhanus.me
+- djhanus.me
+- djhanus.com
+- djh-creative.com
+- djh-portfolio.com
 
-- about me (bio)
+### Sitemap Overview
+
+- intro / about me
+- click button for resume
 - core skills
+- other skills and traits
 - personal strengths
-- goals and wishes
-- link to resume
-- link to github, code examples
-- selected photography examples
+- code examples / link to github
+- selected photography
 	- portraits, interiors, panoramomic, nature outdoor, lifestyle, events
-- list of clients, past work experiences, project highlights
+- past clients of note
+- work experiences
+- project highlights
+
 
 
 # EMPLOYMENT RESEARCH
