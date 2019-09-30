@@ -1,15 +1,14 @@
 /*
- Theme Name:   WP Starter Theme
+ Theme Name:   DH Portfolio 2020
  Theme URI:    local
- Description:  starter theme for custom wp sites
- Author:       DJH
- Author URI:   https://thisisblueline.com
+ Description:  a portfolio resume theme
+ Author:       djhanus
+ Author URI:   https://djhanus.me
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
 /* RESET */
-@import url("mobile.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,13 +72,13 @@ body {
   font-family: Arial, sans;
   background: #FFFFFF;
   height: auto;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 html p,
 body p {
   font-size: 16px;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.4;
   color: black;
   padding-bottom: 20px;
 }
@@ -115,7 +114,8 @@ body ul li,
 body ol li {
   padding-bottom: 10px;
 }
-html img.alignright,
+html .alignright, html img.alignright,
+body .alignright,
 body img.alignright {
   margin-left: 1.5em;
   display: inline;
@@ -123,7 +123,8 @@ body img.alignright {
   height: auto;
   max-width: 350px;
 }
-html img.alignleft,
+html .alignleft, html img.alignleft,
+body .alignleft,
 body img.alignleft {
   margin-right: 1.5em;
   display: inline;
@@ -131,7 +132,8 @@ body img.alignleft {
   height: auto;
   max-width: 350px;
 }
-html img.aligncenter,
+html .aligncenter, html img.aligncenter,
+body .aligncenter,
 body img.aligncenter {
   margin-right: auto;
   margin-left: auto;
@@ -139,6 +141,24 @@ body img.aligncenter {
   clear: both;
   height: auto;
   max-width: 550px;
+}
+html .wp-caption,
+body .wp-caption {
+  margin-bottom: 1.5em;
+  text-align: center;
+  padding-top: 5px;
+}
+html .wp-caption img,
+body .wp-caption img {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+html .wp-caption p.wp-caption-text,
+body .wp-caption p.wp-caption-text {
+  line-height: 1.5;
+  font-size: 10px;
+  margin: 0;
 }
 html blockquote,
 body blockquote {
@@ -162,7 +182,21 @@ main {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  max-width: 1080px;
+  margin: 50px auto;
+}
+
+.placeholder {
+  width: 100%;
+  max-width: 1080px;
+  margin: 75px auto;
+  padding: 100px;
+  font-size: 18px;
+  color: black;
+  border: 2px solid #666;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fafafa;
 }
 
 header {
@@ -328,6 +362,45 @@ header .hamburger-menu:after,
 header .hamburger-menu:after {
   top: 11px;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#page-home {
+  margin: 0;
+  padding: 0;
+}
+#page-home h1 {
+  font-size: 72px;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+#page-home .subtitle {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 42px;
+  color: #666;
+  text-align: center;
+}
+#page-home .button {
+  margin: 120px 50px;
+}
+#page-home .button a {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+  border: 2px solid #00BCD1;
+  border-radius: 5px;
+  padding: 12px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #00BCD1;
+  text-align: center;
+  text-decoration: none;
+}
+#page-home .button a:hover {
+  color: white;
+  background-color: #00BCD1;
 }
 
 /*# sourceMappingURL=style.css.map */

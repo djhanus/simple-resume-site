@@ -15,26 +15,6 @@
 
 <body <?php body_class(); ?>>
   <header>
-
-    <!-- HAMBURGER BUTTON -->
-    <div class="hamburger-wrapper">
-      <div class="hamburger-menu"></div>
-    </div>
-
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu-container">
-      <div class="mobile-menu">
-        <?php wp_nav_menu( array( 'theme_location' => 'mobile-menu' ) ); ?>
-      </div>
-    </div>
-
-    <!-- MAIN MENU -->
-    <div class="main-menu-container">
-      <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg"></a>
-        <div class="main-menu">
-          <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-        </div>
-    </div>
-
+    
   </header>
 <main>
