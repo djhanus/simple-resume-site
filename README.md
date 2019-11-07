@@ -1,24 +1,35 @@
+# JOB SEARCH - OVERVIEW
+
+## Next Steps:
+
+- create resume doc file
+- continue website framework
+- job search
+- selected website examples
+- selected photography examples
+
+
 # RESUME - OVERVIEW
 
-## Places of Previous Employment
+## Previous Employment
 
 ### Blueline Media - Bloomington, IN
 
 - 2016-Present
-- Senior Developer
-- Technical lead on all web projects, front-end developer
+- Technical Lead
+- Web Development, UX Design, Systems Administration
 
 ### Google Street View - Chicago, IL
 
 - 2013-2016
 - Photographer
-- High dynamic range panoramic photography for businesses
+- High dynamic range panoramic photography
 
 ### Sparkfactor - Chicago, IL
 
 - 2010-2016
-- Web Designer
-- Graphic design, web development, photography, and video production
+- Digital Creative
+- Graphic Design, Web Development, SEO, Advertising
 
 ### Windy City Labs - Chicago, IL
 
@@ -31,25 +42,20 @@
 ## Core Skills
 
 - Web Development
-- Server Administration
+- System Administration
 - Project Management
 
-- creative project management
-- taking designs and creating responsive websites
-- managing and updating client websites
-- managing and maintaing client web servers
+## Secondary Skills
 
-## Other Skills
-
-- Responsive Web Design
 - Photography
-- Video Production
-- SEO, Marketing, Advertising
+- Graphic Design
+- Advertising & Marketing
+- UX Design
 
 ## Software & Languages
 
 - HTML, CSS, PHP, JS
-- Git, Sass, CLI
+- Git, Sass, Less, CLI
 - Wordpress, Drupal, CMS
 - PHPMyAdmin, MySQL, Apache
 - Photoshop, Illustrator, InDesign
@@ -62,19 +68,17 @@
 - strong organizational habits
 
 
-## Experience
-
-
 ## Academic Accomplishments
 
-- IU BFA 2009
-
+- Indiana University Bloomington
+- Bachelor of Fine Arts (2009)
+- Major: Photography
 
 ## Previous Clients
 
 - Loren Wood Builders
 - Bloomington Health Foundation
-- Cardinal Stage
+- Sycamore Land Trust
 - American Libraries Magazine
 - Special Olympics Illinois
 - Polish Roman Catholic Union of America
@@ -85,9 +89,6 @@
 - Ryan Irvin
 - Kim Alpert
 - George Lowe
-
-
-
 
 # WEBSITE PORTFOLIO
 
@@ -122,7 +123,7 @@ Bloomington
 - IU Jobs
 - Dimension Mill, who is there what etc.
 - research any other agencies/firms in Bloomington
-- Loren Wood Buildersx
+- Loren Wood Builders
 
 Columbus
 
