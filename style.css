@@ -69,36 +69,45 @@ table {
 
 html,
 body {
-  font-family: Arial, sans;
-  background: #FFFFFF;
+  font-family: "Lato", sans-serif;
   height: auto;
   line-height: 1.4;
 }
 html p,
 body p {
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   text-align: left;
   line-height: 1.4;
   color: black;
   padding-bottom: 20px;
 }
+html h1, html h2, html h3, html h4, html h5, html h6,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Libre Baskerville", serif;
+}
 html h1,
 body h1 {
-  font-size: 32px;
+  font-size: 48px;
   margin: 15px 0px;
   color: black;
   font-weight: bold;
 }
 html h2,
 body h2 {
-  font-size: 28px;
+  font-size: 36px;
   margin: 15px 0px;
   color: black;
   font-weight: normal;
 }
 html h3,
 body h3 {
-  font-size: 22px;
+  font-size: 28px;
   margin: 15px 0px;
   color: black;
   font-weight: normal;
@@ -204,9 +213,10 @@ header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  background: #FFFFFF;
+  background: #999999;
   width: 100%;
-  height: 150px;
+  height: 50px;
+  border-bottom: 3px solid black;
 }
 header img {
   width: 300px;
@@ -214,193 +224,184 @@ header img {
   padding: 15px 10px;
   margin: 0 0 0 25px;
 }
-header .main-menu-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-header .main-menu-container .main-menu {
-  margin-left: auto;
-}
-header .main-menu-container .main-menu ul {
-  display: inline-flex;
-  margin-right: 25px;
-}
-header .main-menu-container .main-menu ul li a {
-  position: relative;
-  font-size: 18px;
-  font-family: Arial, sans;
-  font-weight: 500;
-  color: black;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 5px 15px;
-  margin: 0px 5px;
-}
-header .main-menu-container .main-menu ul li a:hover {
-  color: cyan;
-}
-header .mobile-menu-container {
-  z-index: 10000;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 20px 0;
-  width: 100%;
-  height: 100%;
-  background: #333;
-  text-align: center;
-  transform: translate(-100%, 0);
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-top: 75px;
-}
-header .mobile-menu-container .mobile-menu ul li {
-  margin: 10px 0;
-}
-header .mobile-menu-container .mobile-menu ul li a {
-  text-transform: uppercase;
-  color: black;
-  font-size: 22px;
-  font-weight: 800;
-}
-header .mobile-menu-container .mobile-menu ul li a:hover {
-  color: white;
-}
-header .mobile-menu-container .social-icons {
-  width: 100%;
-  padding: 20px 0;
-  margin: 0 auto;
-}
-header .mobile-menu-container .social-icons i,
-header .mobile-menu-container .social-icons svg {
-  color: white;
-  font-size: 40px;
-}
-header .mobile-menu-container .social-icons i:hover,
-header .mobile-menu-container .social-icons svg:hover {
-  color: cyan;
-}
-header .hamburger-wrapper {
-  z-index: 100000;
-  position: fixed;
-  top: 25px;
-  right: 25px;
-  margin: auto;
-  width: 40px;
-  height: 26px;
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  header .hamburger-wrapper {
-    display: none;
-  }
-}
-header .hamburger-menu,
-header .hamburger-menu,
-header .hamburger-menu {
-  width: 40px;
-  height: 4px;
-  position: relative;
-  transform: translateY(11px);
-  background: white;
-  transition: all 0ms 300ms;
-}
-header .hamburger-menu:after, header .hamburger-menu:before,
-header .hamburger-menu:after,
-header .hamburger-menu:before,
-header .hamburger-menu:after,
-header .hamburger-menu:before {
-  width: 40px;
-  height: 4px;
-}
-header .hamburger-menu.animate,
-header .hamburger-menu.animate,
-header .hamburger-menu.animate {
-  background: rgba(255, 255, 255, 0);
-}
-header .hamburger-menu.animate:after, header .hamburger-menu.animate:before,
-header .hamburger-menu.animate:after,
-header .hamburger-menu.animate:before,
-header .hamburger-menu.animate:after,
-header .hamburger-menu.animate:before {
-  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-header .hamburger-menu.animate:after,
-header .hamburger-menu.animate:after,
-header .hamburger-menu.animate:after {
-  top: 0;
-  transform: rotate(45deg);
-}
-header .hamburger-menu.animate:before,
-header .hamburger-menu.animate:before,
-header .hamburger-menu.animate:before {
-  bottom: 0;
-  transform: rotate(-45deg);
-}
-header .hamburger-menu:before, header .hamburger-menu:after,
-header .hamburger-menu:before,
-header .hamburger-menu:after,
-header .hamburger-menu:before,
-header .hamburger-menu:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  background: white;
-}
-header .hamburger-menu:before,
-header .hamburger-menu:before,
-header .hamburger-menu:before {
-  bottom: 11px;
-  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-header .hamburger-menu:after,
-header .hamburger-menu:after,
-header .hamburger-menu:after {
-  top: 11px;
-  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
 
 #page-home {
+  position: relative;
   margin: 0;
   padding: 0;
+  /* Container Title */
 }
-#page-home h1 {
+#page-home .namecard {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 75px 25px 50px;
+}
+#page-home .namecard h1 {
   font-size: 72px;
   color: black;
   text-align: center;
-  margin: 0 auto;
+  margin: 25px auto;
   line-height: 1.2;
 }
-#page-home .subtitle {
-  font-family: Georgia, serif;
+#page-home .namecard .subtitle {
+  font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-size: 42px;
   color: #666;
   text-align: center;
 }
-#page-home .button {
-  margin: 120px 50px;
-}
-#page-home .button a {
+#page-home .namecard a {
+  position: relative;
+  margin: 50px auto;
   display: block;
-  width: 170px;
-  margin: 0 auto;
-  border: 2px solid #00BCD1;
+  border: 2px solid #666;
   border-radius: 5px;
-  padding: 12px 30px;
+  padding: 8px 30px;
+  width: 150px;
   font-size: 24px;
   font-weight: bold;
-  color: #00BCD1;
+  color: #666;
   text-align: center;
   text-decoration: none;
 }
-#page-home .button a:hover {
+#page-home .namecard a:hover {
   color: white;
-  background-color: #00BCD1;
+  background-color: #26ADE4;
+  border-color: #26ADE4;
+}
+#page-home .introduction {
+  margin: 0px auto;
+  max-width: 840px;
+}
+#page-home .introduction p {
+  color: #666;
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.8;
+  max-width: 720px;
+  margin: 0 auto;
+}
+#page-home h2 {
+  text-align: center;
+  margin-top: 125px;
+}
+#page-home .core-skills {
+  display: flex;
+}
+#page-home .core-skills .skill-container {
+  border: 1px solid #26ADE4;
+  border-radius: 15px;
+  width: 33.33%;
+  margin: 0 25px;
+  padding: 10px;
+  text-align: center;
+}
+#page-home .core-skills .skill-container i {
+  font-size: 60px;
+  margin: 20px auto;
+  color: #555;
+}
+#page-home .core-skills .skill-container .title {
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.2;
+}
+#page-home .core-skills .skill-container .description {
+  font-size: 16px;
+  padding: 5px 15px;
+  margin: 0;
+}
+#page-home .software-languages {
+  max-width: 720px;
+  columns: 4;
+  column-gap: 70px;
+}
+#page-home .software-languages ul {
+  margin: 0;
+  padding: 0;
+}
+#page-home .software-languages ul li {
+  font-size: 18px;
+  color: black;
+  line-height: 1;
+  padding: 6px 8px;
+  background-color: #EBF7F8;
+  margin-bottom: 10px;
+}
+#page-home .software-languages ul li:hover {
+  background-color: #26ADE4;
+}
+#page-home .other-skills {
+  max-width: 960px;
+  columns: 2;
+}
+#page-home .other-skills ul {
+  list-style-type: disc;
+}
+#page-home .other-skills ul li {
+  font-size: 24px;
+  padding-bottom: 20px;
+  color: #333333;
+  font-family: "Libre Baskerville", serif;
+}
+#page-home .other-skills ul li p {
+  font-size: 18px;
+  padding: 5px 0px;
+  color: #777777;
+}
+#page-home .personal-strengths {
+  font-size: 24px;
+  font-style: italic;
+  color: #333333;
+  columns: 3;
+}
+#page-home .personal-strengths span.detail {
+  display: block;
+  margin: 0;
+}
+#page-home .personal-strengths i {
+  font-size: 32px;
+  padding-right: 10px;
+  color: #666666;
+}
+#page-home .selected-clients {
+  max-width: 800px;
+  columns: 2;
+}
+#page-home .selected-clients ul {
+  list-style-type: disc;
+}
+#page-home .selected-clients ul li {
+  font-size: 20px;
+}
+#page-home .selected-clients ul li a {
+  text-decoration: none;
+  color: black;
+}
+#page-home .selected-clients ul li a:hover {
+  color: #26ADE4;
+}
+#page-home .contact {
+  text-align: center;
+}
+#page-home .contact a {
+  text-decoration: none;
+  color: #666666;
+}
+#page-home .contact a i {
+  font-size: 54px;
+  padding: 0 25px;
+}
+#page-home .contact a:hover {
+  color: #26ADE4;
+}
+#page-home .signature {
+  display: none;
+  font-size: 28px;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

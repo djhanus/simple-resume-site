@@ -71,20 +71,27 @@ table {
 
 // FONTS -------------------------------------- *
 
+$heading:   'Libre Baskerville', serif;
+$body:      'Lato', sans-serif;
 
 // COLORS ------------------------------------- *
 
+$black:       #000000;
+$light-grey:  #000000;
+$dark-grey:   #000000;
+$cool-blue:   #26ADE4;
+$light-blue:  #EBF7F8;
 
 // GLOBAL ------------------------------------- *
 
 html,
 body {
-  font-family: Arial, sans;
-  background: #FFFFFF;
+  font-family: $body;
   height: auto;
   line-height: 1.4;
 
   p {
+    font-family: $body;
     font-size: 16px;
     text-align: left;
     line-height: 1.4;
@@ -92,22 +99,26 @@ body {
     padding-bottom: 20px;
   }
 
+  h1,h2,h3,h4,h5,h6 {
+    font-family: $heading;
+  }
+
   h1 {
-    font-size: 32px;
+    font-size: 48px;
     margin: 15px 0px;
     color: black;
     font-weight: bold;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 36px;
     margin: 15px 0px;
     color: black;
     font-weight: normal;
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 28px;
     margin: 15px 0px;
     color: black;
     font-weight: normal;
@@ -212,9 +223,10 @@ header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  background: #FFFFFF;
+  background: #999999;
   width: 100%;
-  height: 150px;
+  height: 50px;
+  border-bottom: 3px solid black;
 
   // LOGO
   img {
@@ -223,209 +235,223 @@ header {
     padding: 15px 10px;
     margin: 0 0 0 25px;
   }
-
-  .main-menu-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    .main-menu {
-      margin-left: auto;
-
-      ul {
-        display: inline-flex;
-        margin-right: 25px;
-
-        li {
-          a {
-            position: relative;
-            font-size: 18px;
-            font-family: Arial, sans;
-            font-weight: 500;
-            color: black;
-            text-transform: uppercase;
-            text-decoration: none;
-            padding: 5px 15px;
-            margin: 0px 5px;
-
-            &:hover {
-              color: cyan;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .mobile-menu-container {
-    z-index: 10000;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 20px 0;
-    width: 100%;
-    height: 100%;
-    background: #333;
-    text-align: center;
-    transform: translate(-100%, 0);
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    margin-top: 75px;
-
-    .mobile-menu {
-      ul {
-        li {
-          margin: 10px 0;
-
-          a {
-            text-transform: uppercase;
-            color: black;
-            font-size: 22px;
-            font-weight: 800;
-
-            &:hover {
-              color: white;
-            }
-          }
-        }
-      }
-    }
-
-    .social-icons {
-      width: 100%;
-      padding: 20px 0;
-      margin: 0 auto;
-
-      i,
-      svg {
-        color: white;
-        font-size: 40px;
-
-        &:hover {
-          color: cyan;
-        }
-      }
-    }
-  }
-
-  // HAMBURGER
-  .hamburger-wrapper {
-    z-index: 100000;
-    position: fixed;
-    top: 25px;
-    right: 25px;
-    margin: auto;
-    width: 40px;
-    height: 26px;
-    cursor: pointer;
-
-    @media(min-width:768px) {
-      display: none;  // hide on desktop
-    }
-  }
-
-  .hamburger-menu,
-  .hamburger-menu,
-  .hamburger-menu {
-    width: 40px;
-    height: 4px;
-    position: relative;
-    transform: translateY(11px);
-    background: white;
-    transition: all 0ms 300ms;
-
-    &:after,
-    &:before {
-      width: 40px;
-      height: 4px;
-    }
-
-    &.animate {
-      background: rgba(255, 255, 255, 0);
-
-      &:after,
-      &:before {
-        transition: bottom 300ms cubic-bezier(0.23, 1, .32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, .32, 1);
-      }
-
-      &:after {
-        top: 0;
-        transform: rotate(45deg);      }
-
-      &:before {
-        bottom: 0;
-        transform: rotate(-45deg);
-      }
-    }
-
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      background: white;
-    }
-
-    &:before {
-      bottom: 11px;
-      transition: bottom 300ms 300ms cubic-bezier(0.23, 1, .32, 1), transform 300ms cubic-bezier(0.23, 1, .32, 1)
-    }
-
-    &:after {
-      top: 11px;
-      transition: top 300ms 300ms cubic-bezier(0.23, 1, .32, 1), transform 300ms cubic-bezier(0.23, 1, .32, 1)
-    }
-  } // END hamburger
-
 } // END header
 
 // HOMEPAGE ------------------------------- *
 
-$nice-blue:   #00BCD1;
-
 #page-home {
+  position: relative;
   margin: 0;
   padding: 0;
 
-h1 {
-  font-size: 72px;
-  color: black;
-  text-align: center;
-  margin: 0 auto;
-  line-height: 1.2;
-}
+  .namecard {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 75px 25px 50px;
 
-  .subtitle {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 42px;
-    color: #666;
-    text-align: center;
-  }
+    h1 {
+      font-size: 72px;
+      color: black;
+      text-align: center;
+      margin: 25px auto;
+      line-height: 1.2;
+    }
 
-  .button {
-    margin: 120px 50px;
+    .subtitle {
+      font-family: $heading;
+      font-style: italic;
+      font-size: 42px;
+      color: #666;
+      text-align: center;
+    }
+
     a {
+      position: relative;
+      margin: 50px auto;
       display: block;
-      width: 170px;
-      margin: 0 auto;
-      border: 2px solid $nice-blue;
+      border: 2px solid #666;
       border-radius: 5px;
-      padding: 12px 30px;
+      padding: 8px 30px;
+      width: 150px;
       font-size: 24px;
       font-weight: bold;
-      color: $nice-blue;
+      color: #666;
       text-align: center;
       text-decoration: none;
 
       &:hover {
         color: white;
-        background-color: $nice-blue;
+        background-color: $cool-blue;
+        border-color: $cool-blue;
       }
     }
+  }
+
+  .introduction {
+    margin: 0px auto;
+    max-width: 840px;
+
+    p {
+      color: #666;
+      font-size: 20px;
+      font-family: $heading;
+      line-height: 1.8;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  /* Container Title */
+
+  h2 {
+    text-align: center;
+    margin-top: 125px;
+  }
+
+  .core-skills {
+    display: flex;
+
+    .skill-container {
+      border: 1px solid $cool-blue;
+      border-radius: 15px;
+      width: 33.33%;
+      margin: 0 25px;
+      padding: 10px;
+      text-align: center;
+
+      i {
+        font-size: 60px;
+        margin: 20px auto;
+        color: #555;
+      }
+
+      .title {
+        font-size: 20px;
+        font-family: $heading;
+        line-height: 1.2;
+      }
+
+      .description {
+        font-size: 16px;
+        padding: 5px 15px;
+        margin: 0;
+
+      }
+    }
+  }
+
+  .software-languages {
+    max-width: 720px;
+    columns: 4;
+    column-gap: 70px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+
+      li {
+        font-size: 18px;
+        color: black;
+        line-height: 1.0;
+        padding: 6px 8px;
+        background-color: $light-blue;
+        margin-bottom: 10px;
+
+        &:hover {
+          background-color: $cool-blue;
+        }
+
+      }
+    }
+  }
+
+  .other-skills {
+    max-width: 960px;
+    columns: 2;
+
+    ul {
+      list-style-type: disc;
+      li {
+        font-size: 24px;
+        padding-bottom: 20px;
+        color: #333333;
+        font-family: $heading;
+
+        p {
+          font-size: 18px;
+          padding: 5px 0px;
+          color: #777777;
+        }
+      }
+    }
+  }
+
+  .personal-strengths {
+    font-size: 24px;
+    font-style: italic;
+    color: #333333;
+    columns: 3;
+
+    span.detail {
+      display: block;
+      margin: 0;
+    }
+
+    i {
+      font-size: 32px;
+      padding-right: 10px;
+      color: #666666;
+    }
+  }
+
+  .selected-clients {
+    max-width: 800px;
+    columns: 2;
+
+    ul {
+      list-style-type: disc;
+
+      li {
+        font-size: 20px;
+
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            color: $cool-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: #666666;
+
+      i {
+        font-size: 54px;
+        padding: 0 25px;
+      }
+
+      &:hover {
+        color: $cool-blue;
+      }
+    }
+  }
+
+  .signature {
+    display: none;
+
+    font-size: 28px;
+    font-family: $heading;
+    font-style: italic;
+    text-align: center;
   }
 } // END #page-home
 
