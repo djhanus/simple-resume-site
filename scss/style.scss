@@ -227,6 +227,7 @@ header {
   width: 100%;
   height: 50px;
   border-bottom: 3px solid black;
+  display: none;
 
   // LOGO
   img {
@@ -454,4 +455,15 @@ header {
     text-align: center;
   }
 } // END #page-home
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
 
