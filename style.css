@@ -1,14 +1,14 @@
 /*
  Theme Name:   DH Portfolio 2020
  Theme URI:    local
- Description:  a portfolio resume theme
+ Description:  custom theme
  Author:       djhanus
- Author URI:   https://djhanus.me
+ Author URI:   https://djhanus.online
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
-/* RESET */
+/* HTML RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -67,11 +67,13 @@ table {
   box-sizing: border-box;
 }
 
+/* Variables */
 html,
 body {
   font-family: "Lato", sans-serif;
   height: auto;
   line-height: 1.4;
+  background-color: #fffff5;
 }
 html p,
 body p {
@@ -100,88 +102,10 @@ body h1 {
 }
 html h2,
 body h2 {
-  font-size: 36px;
+  font-size: 42px;
   margin: 15px 0px;
-  color: black;
+  color: #3c3c3c;
   font-weight: normal;
-}
-html h3,
-body h3 {
-  font-size: 28px;
-  margin: 15px 0px;
-  color: black;
-  font-weight: normal;
-}
-html ul, html ol,
-body ul,
-body ol {
-  margin: 10px 25px;
-  color: black;
-}
-html ul li, html ol li,
-body ul li,
-body ol li {
-  padding-bottom: 10px;
-}
-html .alignright, html img.alignright,
-body .alignright,
-body img.alignright {
-  margin-left: 1.5em;
-  display: inline;
-  float: right;
-  height: auto;
-  max-width: 350px;
-}
-html .alignleft, html img.alignleft,
-body .alignleft,
-body img.alignleft {
-  margin-right: 1.5em;
-  display: inline;
-  float: left;
-  height: auto;
-  max-width: 350px;
-}
-html .aligncenter, html img.aligncenter,
-body .aligncenter,
-body img.aligncenter {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  clear: both;
-  height: auto;
-  max-width: 550px;
-}
-html .wp-caption,
-body .wp-caption {
-  margin-bottom: 1.5em;
-  text-align: center;
-  padding-top: 5px;
-}
-html .wp-caption img,
-body .wp-caption img {
-  border: 0 none;
-  padding: 0;
-  margin: 0;
-}
-html .wp-caption p.wp-caption-text,
-body .wp-caption p.wp-caption-text {
-  line-height: 1.5;
-  font-size: 10px;
-  margin: 0;
-}
-html blockquote,
-body blockquote {
-  padding: 25px 30px;
-  margin: 15px;
-  font-style: italic;
-}
-html strong,
-body strong {
-  font-weight: bold;
-}
-html em,
-body em {
-  font-style: italic;
 }
 
 main {
@@ -195,19 +119,6 @@ main {
   margin: 50px auto;
 }
 
-.placeholder {
-  width: 100%;
-  max-width: 1080px;
-  margin: 75px auto;
-  padding: 100px;
-  font-size: 18px;
-  color: black;
-  border: 2px solid #666;
-  vertical-align: middle;
-  text-align: center;
-  background-color: #fafafa;
-}
-
 header {
   z-index: 1000;
   position: relative;
@@ -216,67 +127,90 @@ header {
   background: #999999;
   width: 100%;
   height: 50px;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
+  /* TEMP */
   display: none;
-}
-header img {
-  width: 300px;
-  height: auto;
-  padding: 15px 10px;
-  margin: 0 0 0 25px;
 }
 
 #page-home {
   position: relative;
   margin: 0;
   padding: 0;
+  background-color: #fffff5;
   /* Container Title */
 }
 #page-home .namecard {
   position: relative;
   height: auto;
   width: 100%;
-  padding: 75px 25px 50px;
+  padding: 50px 25px 10px;
+  /* BUTTON */
+}
+#page-home .namecard img {
+  display: block;
+  margin: 0 auto 50px;
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
 }
 #page-home .namecard h1 {
   font-size: 72px;
   color: black;
   text-align: center;
-  margin: 25px auto;
+  margin: 20px auto 35px;
   line-height: 1.2;
+  text-decoration: underline;
 }
 #page-home .namecard .subtitle {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-size: 42px;
-  color: #666;
+  color: #7d7d7d;
   text-align: center;
 }
 #page-home .namecard a {
   position: relative;
-  margin: 50px auto;
+  margin: 50px auto 0px;
   display: block;
-  border: 2px solid #666;
-  border-radius: 5px;
+  border: 2px solid #26ADE4;
+  color: white;
+  background-color: #26ADE4;
+  border-radius: 7px;
   padding: 8px 30px;
   width: 150px;
   font-size: 24px;
   font-weight: bold;
-  color: #666;
   text-align: center;
   text-decoration: none;
 }
 #page-home .namecard a:hover {
   color: white;
-  background-color: #26ADE4;
-  border-color: #26ADE4;
+  background-color: #A8DBA8;
+  border-color: #A8DBA8;
+}
+#page-home .contact-small {
+  text-align: center;
+  margin: 15px auto 100px;
+  height: auto;
+  padding: 0;
+}
+#page-home .contact-small a {
+  text-decoration: none;
+  color: #7d7d7d;
+}
+#page-home .contact-small a i {
+  font-size: 24px;
+  padding: 0 5px;
+}
+#page-home .contact-small a:hover {
+  color: #A8DBA8;
 }
 #page-home .introduction {
   margin: 0px auto;
   max-width: 840px;
 }
 #page-home .introduction p {
-  color: #666;
+  color: #3c3c3c;
   font-size: 20px;
   font-family: "Libre Baskerville", serif;
   line-height: 1.8;
@@ -291,17 +225,18 @@ header img {
   display: flex;
 }
 #page-home .core-skills .skill-container {
-  border: 1px solid #26ADE4;
-  border-radius: 15px;
+  border: 3px solid #7d7d7d;
+  border-radius: 20px;
+  background-color: #fffffd;
   width: 33.33%;
-  margin: 0 25px;
+  margin: 0 15px;
   padding: 10px;
   text-align: center;
 }
 #page-home .core-skills .skill-container i {
   font-size: 60px;
   margin: 20px auto;
-  color: #555;
+  color: #3c3c3c;
 }
 #page-home .core-skills .skill-container .title {
   font-size: 20px;
@@ -324,10 +259,10 @@ header img {
 }
 #page-home .software-languages ul li {
   font-size: 18px;
-  color: black;
+  color: #3c3c3c;
   line-height: 1;
   padding: 6px 8px;
-  background-color: #EBF7F8;
+  background-color: #f0f0f0;
   margin-bottom: 10px;
 }
 #page-home .software-languages ul li:hover {
@@ -343,18 +278,18 @@ header img {
 #page-home .other-skills ul li {
   font-size: 24px;
   padding-bottom: 20px;
-  color: #333333;
+  color: #3c3c3c;
   font-family: "Libre Baskerville", serif;
 }
 #page-home .other-skills ul li p {
   font-size: 18px;
   padding: 5px 0px;
-  color: #777777;
+  color: #7d7d7d;
 }
 #page-home .personal-strengths {
   font-size: 24px;
   font-style: italic;
-  color: #333333;
+  color: #3c3c3c;
   columns: 3;
 }
 #page-home .personal-strengths span.detail {
@@ -364,10 +299,10 @@ header img {
 #page-home .personal-strengths i {
   font-size: 32px;
   padding-right: 10px;
-  color: #666666;
+  color: #7d7d7d;
 }
 #page-home .selected-clients {
-  max-width: 800px;
+  max-width: 720px;
   columns: 2;
 }
 #page-home .selected-clients ul {
@@ -375,44 +310,46 @@ header img {
 }
 #page-home .selected-clients ul li {
   font-size: 20px;
+  padding-bottom: 7px;
 }
 #page-home .selected-clients ul li a {
   text-decoration: none;
-  color: black;
+  color: #7d7d7d;
 }
 #page-home .selected-clients ul li a:hover {
-  color: #26ADE4;
+  color: #3c3c3c;
 }
 #page-home .contact {
   text-align: center;
+  margin: 50px auto;
+  height: auto;
 }
 #page-home .contact a {
   text-decoration: none;
-  color: #666666;
+  color: #7d7d7d;
 }
 #page-home .contact a i {
-  font-size: 54px;
+  font-size: 64px;
   padding: 0 25px;
 }
 #page-home .contact a:hover {
-  color: #26ADE4;
-}
-#page-home .signature {
-  display: none;
-  font-size: 28px;
-  font-family: "Libre Baskerville", serif;
-  font-style: italic;
-  text-align: center;
+  color: #A8DBA8;
 }
 
 footer {
   text-align: center;
   font-size: 14px;
-  color: #666;
+  color: #7d7d7d;
+  background-color: #fffff5;
+  margin: 0;
+  padding: 0;
 }
-footer a {
-  text-decoration: none;
-  color: black;
+footer .signature {
+  font-size: 21px;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  text-align: center;
+  color: #3c3c3c;
 }
 
 /*# sourceMappingURL=style.css.map */

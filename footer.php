@@ -2,6 +2,10 @@
   <footer>
   	<div class="container">
 
+	  	<div class="signature">
+	      David J. Hanus <br />
+	    </div> <!-- /.signature -->
+
   		https://djhanus.online
 
 	</div> <!-- /.container -->

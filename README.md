@@ -8,7 +8,6 @@
 - selected website examples
 - selected photography examples
 
-
 # RESUME - OVERVIEW
 
 ## Previous Employment
@@ -36,8 +35,6 @@
 - 2009-2015
 - Freelance Photographer
 - Portraits, lifestyle, interiors, events
-
-
 
 ## Core Skills
 
@@ -99,6 +96,7 @@
 - djhanus.com
 - djh-creative.com
 - djh-portfolio.com
+- djhanus.online
 
 ### Sitemap Overview
 

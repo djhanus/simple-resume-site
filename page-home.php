@@ -2,11 +2,23 @@
   <div id="page-home">
 
   	<div class="namecard">
+
+      <img src="<?php echo get_template_directory_uri(''); ?>/images/frog-me.jpg" />
+
   		<h1>David J. Hanus</h1>
   		<div class="subtitle">Creative, Developer</div>
 
   		<a href="#">Résumé</a>
-  	</div>
+  	</div> <!-- /.namecard -->
+
+    <div class="container contact-small">
+
+      <a href="https://github.com/djhanus" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+
+      <a href="https://www.instagram.com/david.onion/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+      <a href="mailto:davidjhanus@gmail.com"><i class="far fa-envelope"></i></a>
+    </div> <!-- /.contact -->
 
     <div class="introduction">
         <p>Hello! My name is David and I make websites for a living. I enjoy all things computer and tech-related. I have a passion for creating, building, and collaborating. Please find more info about my career and skills below. Thanks!</p>
@@ -81,6 +93,9 @@
         <li> UX Design
           <p> developing sitemap architecture, preliminary mockups, and interactive wireframes</p>
         </li>
+        <li> Hardware
+          <p> building computers, reconfiguring, custom builds, homebrew projects</p>
+        </li>
       </ul>
     </div> <!-- /.other-skills -->
 
@@ -105,10 +120,12 @@
         <li> <a href="#">American Libraries Magazine</a> </li>
         <li> <a href="#">Special Olympics Illinois</a> </li>
         <li> <a href="#">Gene Siskel Film Center</a> </li>
+        <li> <a href="#">Upland Brewing Co.</a> </li>
+
       </ul>
     </div> <!-- /.selected-clients -->
 
-    <h2>Contact Me</h2>
+    <h2>Contact</h2>
   	<div class="container contact">
 
       <a href="https://github.com/djhanus" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
@@ -118,22 +135,6 @@
       <a href="mailto:davidjhanus@gmail.com"><i class="far fa-envelope"></i></a>
 
   	</div> <!-- /.contact -->
-
-    <div class="container signature">
-
-      Sincerely,<br />
-      David J. Hanus <br />
-      <br />
-      https://djhanus.online
-
-    </div> <!-- /.signature -->
      
-    <div class="container">
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-        the_content();
-          endwhile; else: ?>
-      <?php endif; ?>
-    </div> <!-- /.container -->
-  
   </div>  <!-- / #page-home -->
 <?php get_footer(); ?>
