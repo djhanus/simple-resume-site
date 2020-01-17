@@ -73,7 +73,7 @@ body {
   font-family: "Lato", sans-serif;
   height: auto;
   line-height: 1.4;
-  background-color: #fffff5;
+  background-color: white;
 }
 html p,
 body p {
@@ -136,14 +136,15 @@ header {
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #fffff5;
+  background-color: white;
   /* Container Title */
 }
 #page-home .namecard {
   position: relative;
   height: auto;
   width: 100%;
-  padding: 50px 25px 10px;
+  padding: 75px 25px 100px;
+  background-color: white;
   /* BUTTON */
 }
 #page-home .namecard img {
@@ -154,7 +155,7 @@ header {
   height: auto;
 }
 #page-home .namecard h1 {
-  font-size: 72px;
+  font-size: 58px;
   color: black;
   text-align: center;
   margin: 20px auto 35px;
@@ -164,18 +165,34 @@ header {
 #page-home .namecard .subtitle {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
-  font-size: 42px;
+  font-size: 30px;
   color: #7d7d7d;
   text-align: center;
+  margin: 25px auto;
 }
-#page-home .namecard a {
+#page-home .namecard .introduction {
+  margin: 25px auto 0px;
+  max-width: 840px;
+}
+#page-home .namecard .introduction p {
+  color: #3c3c3c;
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#page-home .namecard .button {
+  margin: 25px auto;
+}
+#page-home .namecard .button a {
   position: relative;
-  margin: 50px auto 0px;
+  margin: 20px auto 0px;
   display: block;
   border: 2px solid #26ADE4;
   color: white;
   background-color: #26ADE4;
-  border-radius: 7px;
+  border-radius: 10px;
   padding: 8px 30px;
   width: 150px;
   font-size: 24px;
@@ -183,39 +200,27 @@ header {
   text-align: center;
   text-decoration: none;
 }
-#page-home .namecard a:hover {
+#page-home .namecard .button a:hover {
   color: white;
   background-color: #A8DBA8;
   border-color: #A8DBA8;
 }
-#page-home .contact-small {
+#page-home .namecard .contact-small {
   text-align: center;
-  margin: 15px auto 100px;
+  margin: 15px auto 15px;
   height: auto;
   padding: 0;
 }
-#page-home .contact-small a {
+#page-home .namecard .contact-small a.icon {
   text-decoration: none;
   color: #7d7d7d;
 }
-#page-home .contact-small a i {
-  font-size: 24px;
-  padding: 0 5px;
+#page-home .namecard .contact-small a.icon i {
+  font-size: 26px;
+  padding: 0 10px;
 }
-#page-home .contact-small a:hover {
+#page-home .namecard .contact-small a.icon:hover {
   color: #A8DBA8;
-}
-#page-home .introduction {
-  margin: 0px auto;
-  max-width: 840px;
-}
-#page-home .introduction p {
-  color: #3c3c3c;
-  font-size: 20px;
-  font-family: "Libre Baskerville", serif;
-  line-height: 1.8;
-  max-width: 720px;
-  margin: 0 auto;
 }
 #page-home h2 {
   text-align: center;
@@ -225,16 +230,15 @@ header {
   display: flex;
 }
 #page-home .core-skills .skill-container {
-  border: 3px solid #7d7d7d;
+  border: 0px solid #7d7d7d;
   border-radius: 20px;
-  background-color: #fffffd;
   width: 33.33%;
   margin: 0 15px;
   padding: 10px;
   text-align: center;
 }
 #page-home .core-skills .skill-container i {
-  font-size: 60px;
+  font-size: 48px;
   margin: 20px auto;
   color: #3c3c3c;
 }
@@ -265,12 +269,25 @@ header {
   background-color: #f0f0f0;
   margin-bottom: 10px;
 }
-#page-home .software-languages ul li:hover {
+#page-home .software-languages ul li:nth-child(5n+0):hover {
   background-color: #26ADE4;
+}
+#page-home .software-languages ul li:nth-child(5n+1):hover {
+  background-color: #A8DBA8;
+}
+#page-home .software-languages ul li:nth-child(5n+2):hover {
+  background-color: #F9D66E;
+}
+#page-home .software-languages ul li:nth-child(5n+3):hover {
+  background-color: #FF8576;
+}
+#page-home .software-languages ul li:nth-child(5n+4):hover {
+  background-color: #FE9600;
 }
 #page-home .other-skills {
   max-width: 960px;
   columns: 2;
+  column-gap: 60px;
 }
 #page-home .other-skills ul {
   list-style-type: disc;
@@ -291,6 +308,8 @@ header {
   font-style: italic;
   color: #3c3c3c;
   columns: 3;
+  display: none;
+  /* HIDDEN */
 }
 #page-home .personal-strengths span.detail {
   display: block;
@@ -319,10 +338,23 @@ header {
 #page-home .selected-clients ul li a:hover {
   color: #3c3c3c;
 }
+#page-home .bio {
+  margin: 25px auto 0px;
+  max-width: 840px;
+}
+#page-home .bio p {
+  color: #3c3c3c;
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
 #page-home .contact {
   text-align: center;
   margin: 50px auto;
   height: auto;
+  background-color: white;
 }
 #page-home .contact a {
   text-decoration: none;
@@ -340,7 +372,7 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #7d7d7d;
-  background-color: #fffff5;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -350,6 +382,35 @@ footer .signature {
   font-style: italic;
   text-align: center;
   color: #3c3c3c;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #page-home h2 {
+    font-size: 36px;
+  }
+  #page-home .namecard h1 {
+    font-size: 48px;
+  }
+  #page-home .core-skills .skill-container {
+    margin: 0 5px;
+  }
+  #page-home .core-skills .skill-container .title {
+    font-size: 18px;
+  }
+  #page-home .selected-clients {
+    max-width: 680px;
+  }
+  #page-home .other-skills {
+    max-width: 700px;
+    column-gap: 35px;
+  }
+  #page-home .bio {
+    max-width: 700px;
+    padding: 0 25px;
+  }
+  #page-home .bio p {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,21 +8,25 @@
   		<h1>David J. Hanus</h1>
   		<div class="subtitle">Creative, Developer</div>
 
-  		<a href="#">Résumé</a>
+      <div class="introduction">
+        <p>Hello! My name is David and I make websites for a living. I enjoy all things computer and tech-related. I have a passion for creating, building, and collaborating. Please find more info about my career and skills below. Thanks!</p>
+      </div>
+
+  		<div class="button">
+        <a href="#">Résumé</a>
+      </div>
+
+      <div class="container contact-small">
+
+        <a class="icon" href="https://github.com/djhanus" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+
+        <a class="icon" href="https://www.instagram.com/david.onion/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+        <a class="icon" href="mailto:davidjhanus@gmail.com"><i class="far fa-envelope"></i></a>
+      </div> <!-- /.contact -->
+
   	</div> <!-- /.namecard -->
 
-    <div class="container contact-small">
-
-      <a href="https://github.com/djhanus" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
-
-      <a href="https://www.instagram.com/david.onion/" target="_blank"><i class="fab fa-instagram"></i></a>
-
-      <a href="mailto:davidjhanus@gmail.com"><i class="far fa-envelope"></i></a>
-    </div> <!-- /.contact -->
-
-    <div class="introduction">
-        <p>Hello! My name is David and I make websites for a living. I enjoy all things computer and tech-related. I have a passion for creating, building, and collaborating. Please find more info about my career and skills below. Thanks!</p>
-    </div>
 
     <h2>Core Skillset</h2>
   	<div class="container core-skills">
@@ -35,18 +39,18 @@
       </div> <!-- /.skill-container -->
 
       <div class="skill-container">
-        <i class="fas fa-server"></i>
-        <div class="title">Server Administration</div>
-        <div class="description">
-          server setup and management, maintenance, optimization, security
-        </div>
-      </div> <!-- /.skill-container -->
-
-      <div class="skill-container">
         <i class="fas fa-tasks"></i>
         <div class="title">Project Development</div>
         <div class="description">
           pre-production, strategy, client communications, collaborative teamwork
+        </div>
+      </div> <!-- /.skill-container -->
+
+      <div class="skill-container">
+        <i class="fas fa-server"></i>
+        <div class="title">Server Administration</div>
+        <div class="description">
+          server setup and management, maintenance, optimization, security
         </div>
       </div> <!-- /.skill-container -->
   	</div> <!-- /.core-skills -->
@@ -65,7 +69,7 @@
         <li> CLI </li>
         <li> Wordpress </li>
         <li> Drupal </li>
-        <li> CMS </li>
+        <li> MySQL </li>
         <li> PHPMyAdmin </li>
         <li> Apache </li>
         <li> Adobe </li>
@@ -78,29 +82,38 @@
       </ul>
     </div> <!-- /.software-languages -->
 
+    <h2>Website Work Samples</h2>
+    <div class="container selected-clients">
+      <ul>
+        <li> <a href="https://bloomhf.org/" target="_blank">Bloomington Health Foundation</a> </li>
+        <li> <a href="https://sycamorelandtrust.org/" target="_blank">Sycamore Land Trust</a> </li>
+        <li> <a href="https://lorenwoodbuilders.com/" target="_blank">Loren Wood Builders</a> </li>
+        <li> <a href="https://americanlibrariesmagazine.org/" target="_blank">American Libraries Magazine</a> </li>
+        <li> <a href="https://monroecountyhabitat.org/" target="_blank">Habitat for Humanity</a> </li>
+        <li> <a href="https://www.uplandbeer.com/" target="_blank">Upland Brewing Co.</a> </li>
+      </ul>
+    </div> <!-- /.selected-clients -->
+
     <h2>Other Experience & Skills</h2>
     <div class="container other-skills">
       <ul>
         <li> Photography 
-          <p>undergraduate focus, worked as agency and freelance photographer, lifelong hobby </p>
+          <p>undergraduate focus, professional experience as agency and freelance photographer, lifelong hobby </p>
         </li>
         <li> Graphic Design
-          <p>origins of interest in visual communication, experience in web design and marketing
-        </li>
-        <li> Advertising & Marketing
-          <p> minor agency experience working with keywords, search-engine-optimization and analytics data</p>
+          <p>origins of interest in visual communication, experience rooted in web design and marketing
         </li>
         <li> UX Design
           <p> developing sitemap architecture, preliminary mockups, and interactive wireframes</p>
         </li>
         <li> Hardware
-          <p> building computers, reconfiguring, custom builds, homebrew projects</p>
+          <p> building computers, upgrading components, networking, homebrew projects</p>
         </li>
       </ul>
     </div> <!-- /.other-skills -->
 
 
-    <h2>Personal Strengths</h2>
+    <!-- <h2>Personal Strengths</h2> -->
     <div class="container personal-strengths">
 
       <span class="detail"><i class="fas fa-eye"></i> keen attention to detail</span>
@@ -111,19 +124,13 @@
 
     </div> <!-- /.personal-strengths -->
 
-    <h2>Selected Client Portfolio</h2>
-    <div class="container selected-clients">
-      <ul>
-        <li> <a href="#">Loren Wood Builders</a> </li>
-        <li> <a href="#">Bloomington Health Foundation</a> </li>
-        <li> <a href="#">Sycamore Land Trust</a> </li>
-        <li> <a href="#">American Libraries Magazine</a> </li>
-        <li> <a href="#">Special Olympics Illinois</a> </li>
-        <li> <a href="#">Gene Siskel Film Center</a> </li>
-        <li> <a href="#">Upland Brewing Co.</a> </li>
+    <h2>About Me</h2>
 
-      </ul>
-    </div> <!-- /.selected-clients -->
+    <div class="container bio">
+      <p>I'm a native-born Hoosier that grew up in the suburbs of Indiana just outside Chicago. I've always had a passion for the creative arts and computers. I presently live in Nashville, Indiana in a log cabin home (with fiber optic internet access) where I enjoy my personal time homesteading with my wife and son, tending to our garden, hiking, fishing, playing banjo, and enjoying the great outdoors. My favorite food is Polish sausage and pierogi and my favorite music is country, folk and bluegrass.</p>
+    </div>
+
+
 
     <h2>Contact</h2>
   	<div class="container contact">

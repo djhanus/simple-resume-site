@@ -21,7 +21,7 @@ body {
   font-family: $body;
   height: auto;
   line-height: 1.4;
-  background-color: rgb(255,255,245);
+  background-color: rgb(255,255,255);
 
 
   p {
@@ -84,13 +84,14 @@ header {
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: rgb(255,255,245);
+  background-color: rgb(255,255,255);
 
   .namecard {
     position: relative;
     height: auto;
     width: 100%;
-    padding: 50px 25px 10px;
+    padding: 75px 25px 100px;
+    background-color: white;
 
     img {
       display: block;
@@ -101,7 +102,7 @@ header {
     }
 
     h1 {
-      font-size: 72px;
+      font-size: 58px;
       color: black;
       text-align: center;
       margin: 20px auto 35px;
@@ -112,67 +113,72 @@ header {
     .subtitle {
       font-family: $heading;
       font-style: italic;
-      font-size: 42px;
+      font-size: 30px;
       color: $gray-medium;
       text-align: center;
+      margin: 25px auto;
+    }
+
+    .introduction {
+      margin: 25px auto 0px;
+      max-width: 840px;
+
+      p {
+        color: $gray-dark;
+        font-size: 20px;
+        font-family: $heading;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+      }
     }
 
     /* BUTTON */
-    a {
-      position: relative;
-      margin: 50px auto 0px;
-      display: block;
-      border: 2px solid $cool-blue;
-      color: white;
-      background-color: $cool-blue;
-      border-radius: 7px;
-      padding: 8px 30px;
-      width: 150px;
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
+    .button {
+      margin: 25px auto;
 
-      &:hover {
+      a {
+        position: relative;
+        margin: 20px auto 0px;
+        display: block;
+        border: 2px solid $cool-blue;
         color: white;
-        background-color: $nice-green;
-        border-color: $nice-green;
-      }
-    }
-  }
-
-  .contact-small {
-    text-align: center;
-    margin: 15px auto 100px;
-    height: auto;
-    padding: 0;
-
-    a {
-      text-decoration: none;
-      color: $gray-medium;
-
-      i {
+        background-color: $cool-blue;
+        border-radius: 10px;
+        padding: 8px 30px;
+        width: 150px;
         font-size: 24px;
-        padding: 0 5px;
-      }
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
 
-      &:hover {
-        color: $nice-green;
+        &:hover {
+          color: white;
+          background-color: $nice-green;
+          border-color: $nice-green;
+        }
       }
     }
-  }
 
-  .introduction {
-    margin: 0px auto;
-    max-width: 840px;
+    .contact-small {
+      text-align: center;
+      margin: 15px auto 15px;
+      height: auto;
+      padding: 0;
 
-    p {
-      color: $gray-dark;
-      font-size: 20px;
-      font-family: $heading;
-      line-height: 1.8;
-      max-width: 720px;
-      margin: 0 auto;
+      a.icon {
+        text-decoration: none;
+        color: $gray-medium;
+
+        i {
+          font-size: 26px;
+          padding: 0 10px;
+        }
+
+        &:hover {
+          color: $nice-green;
+        }
+      }
     }
   }
 
@@ -187,16 +193,15 @@ header {
     display: flex;
 
     .skill-container {
-      border: 3px solid $gray-medium;
+      border: 0px solid $gray-medium;
       border-radius: 20px;
-      background-color: rgb(255,255,253);
       width: 33.33%;
       margin: 0 15px;
       padding: 10px;
       text-align: center;
 
       i {
-        font-size: 60px;
+        font-size: 48px;
         margin: 20px auto;
         color: $gray-dark;
       }
@@ -234,8 +239,24 @@ header {
         background-color: rgb(240,240,240);
         margin-bottom: 10px;
 
-        &:hover {
+        &:nth-child(5n+0):hover {
           background-color: $cool-blue;
+        }
+
+        &:nth-child(5n+1):hover {
+          background-color: $nice-green;
+        }
+
+        &:nth-child(5n+2):hover {
+          background-color: #F9D66E;
+        }
+
+        &:nth-child(5n+3):hover {
+          background-color: #FF8576;
+        }
+
+        &:nth-child(5n+4):hover {
+          background-color: #FE9600;
         }
 
       }
@@ -245,6 +266,7 @@ header {
   .other-skills {
     max-width: 960px;
     columns: 2;
+    column-gap: 60px;
 
     ul {
       list-style-type: disc;
@@ -268,6 +290,7 @@ header {
     font-style: italic;
     color: $gray-dark;
     columns: 3;
+    display: none;  /* HIDDEN */
 
     span.detail {
       display: block;
@@ -304,10 +327,25 @@ header {
     }
   }
 
+  .bio {
+    margin: 25px auto 0px;
+    max-width: 840px;
+
+    p {
+      color: $gray-dark;
+      font-size: 20px;
+      font-family: $heading;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
   .contact {
     text-align: center;
     margin: 50px auto;
     height: auto;
+    background-color: rgb(255,255,255);
 
     a {
       text-decoration: none;
@@ -329,7 +367,7 @@ footer {
   text-align: center;
   font-size: 14px;
   color: $gray-medium;
-  background-color: rgb(255,255,245);
+  background-color: rgb(255,255,255);
   margin: 0;
   padding: 0;
 
@@ -340,5 +378,62 @@ footer {
     text-align: center;
     color: $gray-dark;
   }
+}
+
+
+// MEDIUM
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #page-home {
+    h2 {
+      font-size: 36px;
+    }
+    .namecard {
+      h1 {
+        font-size: 48px;
+      }
+    }
+
+    .core-skills {
+      .skill-container {
+        margin: 0 5px;
+
+        .title {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .selected-clients {
+      max-width: 680px;
+    }
+
+    .other-skills {
+      max-width: 700px;
+      column-gap: 35px;
+    }
+
+    .bio {
+      max-width: 700px;
+      padding: 0 25px;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+
+} 
+
+// NARROW
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+// MOBILE
+@media (min-width: 320px) and (max-width: 480px) {
+
 }
 
