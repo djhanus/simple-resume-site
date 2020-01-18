@@ -13,7 +13,7 @@
       </div>
 
   		<div class="button">
-        <a href="#">Résumé</a>
+        <a href="/assets/David-J-Hanus-2020-Resume.PDF">Résumé</a>
       </div>
 
       <div class="container contact-small">
