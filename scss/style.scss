@@ -285,6 +285,30 @@ header {
     }
   }
 
+  .photography {
+    margin: 0 auto;
+    text-align: center;
+
+    a {
+      color: $gray-medium;
+      font-size: 18px;
+      text-decoration: none;
+
+      &:hover {
+        color: $gray-dark;
+        text-decoration: underline;
+      }
+    }
+
+    i {
+      font-size: 48px;
+      color: $gray-dark;
+      text-align: center;
+      display: block;
+      padding: 15px;
+    }
+  }
+
   .personal-strengths {
     font-size: 24px;
     font-style: italic;
@@ -309,11 +333,16 @@ header {
     columns: 2;
 
     ul {
-      list-style-type: disc;
+      list-style-type: none;
 
       li {
         font-size: 20px;
         padding-bottom: 7px;
+        background-image: url('images/computer.svg');
+        background-repeat: no-repeat;
+        background-position: 0px 6px;
+        padding-left: 30px;
+        background-size: 15px;
 
         a {
           text-decoration: none;
@@ -372,7 +401,7 @@ footer {
   padding: 0;
 
   .signature {
-    font-size: 21px;
+    font-size: 24px;
     font-family: $heading;
     font-style: italic;
     text-align: center;
@@ -422,18 +451,203 @@ footer {
       }
     }
   }
-
-
-
-} 
+} //
 
 // NARROW
 @media (min-width: 481px) and (max-width: 767px) {
 
-}
+  #page-home {
+    h2 {
+      font-size: 32px;
+    }
+    .namecard {
+      padding: 50px 25px;
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .introduction {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .core-skills {
+      display: block;
+
+      .skill-container {
+        margin: 0 5px;
+        width: 100%;
+
+        i {
+        }
+
+        .title {
+          font-size: 21px;
+        }
+
+        .description {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .software-languages {
+      max-width: 380px;
+      padding: 0 20px;
+      columns: 2;
+      column-gap: 40px;
+
+    }
+
+    .selected-clients {
+      max-width: 340px;
+      columns: 1;
+
+      ul {
+        li {
+          font-size: 21px;
+          padding-bottom: 15px;
+          background-size: 18px;
+          background-position: 0 8px;
+
+        }
+      }
+    }
+
+    .other-skills {
+      max-width: 360px;
+      columns: 1;
+
+      ul {
+        li {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .bio {
+      max-width: 700px;
+      padding: 0 25px;
+
+      p {
+        font-size: 16px;
+        line-height: 1.9;
+      }
+    }
+  }
+
+} //
 
 // MOBILE
 @media (min-width: 320px) and (max-width: 480px) {
 
+  #page-home {
+    h2 {
+      font-size: 26px;
+      padding: 0 10px;
+    }
+    .namecard {
+      padding: 50px 25px;
+
+      img {
+        width: 175px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 24px;
+      }
+
+      .introduction {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .core-skills {
+      display: block;
+
+      .skill-container {
+        margin: 15px 5px;
+        width: 100%;
+
+        i {
+        }
+
+        .title {
+          font-size: 21px;
+        }
+
+        .description {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .software-languages {
+      max-width: 300px;
+      padding: 0 20px;
+      columns: 2;
+      column-gap: 20px;
+
+    }
+
+    .selected-clients {
+      max-width: 260px;
+      columns: 1;
+
+      ul {
+        li {
+          font-size: 18px;
+          padding-bottom: 25px;
+          background-size: 18px;
+          background-position: 0 8px;
+
+        }
+      }
+    }
+
+    .other-skills {
+      max-width: 280px;
+      columns: 1;
+
+      ul {
+        list-style-type: none;
+        li {
+          font-size: 22px;
+
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    .bio {
+      max-width: 700px;
+      padding: 0 25px;
+
+      p {
+        font-size: 16px;
+        line-height: 1.8;
+      }
+    }
+
+    .contact {
+      a {
+        i {
+          font-size: 42px;
+          padding: 0 15px;
+        }
+      }
+    }
+  }
 }
 

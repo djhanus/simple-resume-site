@@ -3,7 +3,7 @@
 
   	<div class="namecard">
 
-      <img src="<?php echo get_template_directory_uri(''); ?>/images/frog-me.jpg" />
+      <img src="<?php echo get_template_directory_uri(''); ?>/images/selfie-canoe.png" />
 
   		<h1>David J. Hanus</h1>
   		<div class="subtitle">Creative, Developer</div>
@@ -98,10 +98,10 @@
     <div class="container other-skills">
       <ul>
         <li> Photography 
-          <p>undergraduate focus, professional experience as agency and freelance photographer, lifelong hobby </p>
+          <p>undergraduate focus, professional experience as agency and freelance photographer, lifelong hobby and passion </p>
         </li>
         <li> Graphic Design
-          <p>origins of interest in visual communication, experience rooted in web design and marketing
+          <p>origins of interest in visual communication, range of experience rooted in web design and marketing
         </li>
         <li> UX Design
           <p> developing sitemap architecture, preliminary mockups, and interactive wireframes</p>
@@ -111,6 +111,15 @@
         </li>
       </ul>
     </div> <!-- /.other-skills -->
+
+    <h2>Selected Photography</h2>
+
+    <div class="container photography">
+
+      <a href="#"><i class="fas fa-camera"></i></a>
+      <a href="#" target="_blank">Click Here to View Gallery</a>
+
+    </div> <!-- /.photography -->
 
 
     <!-- <h2>Personal Strengths</h2> -->
@@ -127,7 +136,7 @@
     <h2>About Me</h2>
 
     <div class="container bio">
-      <p>I'm a native-born Hoosier that grew up in the suburbs of Indiana just outside Chicago. I've always had a passion for the creative arts and computers. I presently live in Nashville, Indiana in a log cabin home (with fiber optic internet access) where I enjoy my personal time homesteading with my wife and son, tending to our garden, hiking, fishing, playing banjo, and enjoying the great outdoors. My favorite food is Polish sausage and pierogi and my favorite music is country, folk and bluegrass.</p>
+      <p>I'm a native-born Hoosier that grew up in the suburbs of Indiana just outside Chicago. I've always had a passion for the creative arts, music, and computers. I lived in Chicago for a number of years pursuing these interests but have since relocated to Nashville, Indiana to put down roots with my new and growing family. I presently live in a log cabin home on the edge of a state forest (with fiber optic internet access) where I enjoy my personal time homesteading with my wife and son: tending to our garden, hiking, fishing, playing banjo, and enjoying the great outdoors. My favorite food is Polish sausage with pierogi and my favorite kind of music is country, folk and bluegrass. I also love movies and my favorite book is The Hobbit.</p>
     </div>
 
 
