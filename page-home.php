@@ -13,7 +13,7 @@
       </div>
 
   		<div class="button">
-        <a href="/assets/David-J-Hanus-2020-Resume.PDF">Résumé</a>
+        <a href="<?php echo get_template_directory_uri(''); ?>/assets/David-J-Hanus-2020-Resume.PDF" target="_blank">Résumé</a>
       </div>
 
       <div class="container contact-small">
@@ -112,13 +112,10 @@
       </ul>
     </div> <!-- /.other-skills -->
 
-    <h2>Selected Photography</h2>
-
+    <!-- <h2>Selected Photography</h2> -->
     <div class="container photography">
-
-      <a href="#"><i class="fas fa-camera"></i></a>
-      <a href="#" target="_blank">Click Here to View Gallery</a>
-
+      <a href="/photography/"><i class="fas fa-camera"></i></a>
+      <a href="/photography" target="_blank">Click Here to View Gallery</a>
     </div> <!-- /.photography -->
 
 

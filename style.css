@@ -304,6 +304,7 @@ header {
   color: #7d7d7d;
 }
 #page-home .photography {
+  display: none;
   margin: 0 auto;
   text-align: center;
 }
@@ -322,6 +323,23 @@ header {
   text-align: center;
   display: block;
   padding: 15px;
+}
+#page-home .photography-portfolio {
+  max-width: 1080px;
+  padding: 0 15px;
+}
+#page-home .photography-portfolio .namecard {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+#page-home .photography-portfolio .namecard h1 {
+  font-size: 58px;
+  color: black;
+  text-align: center;
+  margin: 20px auto 35px;
+  line-height: 1.2;
+  text-decoration: underline;
 }
 #page-home .personal-strengths {
   font-size: 24px;
@@ -429,6 +447,9 @@ footer .signature {
     max-width: 700px;
     column-gap: 35px;
   }
+  #page-home .photography-portfolio .namecard h1 {
+    font-size: 38px;
+  }
   #page-home .bio {
     max-width: 700px;
     padding: 0 25px;
@@ -478,6 +499,9 @@ footer .signature {
     padding-bottom: 15px;
     background-size: 18px;
     background-position: 0 8px;
+  }
+  #page-home .photography-portfolio .namecard h1 {
+    font-size: 32px;
   }
   #page-home .other-skills {
     max-width: 360px;
@@ -564,6 +588,9 @@ footer .signature {
   #page-home .bio p {
     font-size: 16px;
     line-height: 1.8;
+  }
+  #page-home .photography-portfolio .namecard h1 {
+    font-size: 32px;
   }
   #page-home .contact a i {
     font-size: 42px;

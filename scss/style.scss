@@ -286,6 +286,7 @@ header {
   }
 
   .photography {
+    display: none;
     margin: 0 auto;
     text-align: center;
 
@@ -306,6 +307,26 @@ header {
       text-align: center;
       display: block;
       padding: 15px;
+    }
+  }
+
+  .photography-portfolio {
+    max-width: 1080px;
+    padding: 0 15px;
+
+    .namecard {
+      height: auto;
+      padding: 0;
+      margin: 0;
+
+      h1 {
+        font-size: 58px;
+        color: black;
+        text-align: center;
+        margin: 20px auto 35px;
+        line-height: 1.2;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -442,6 +463,14 @@ footer {
       column-gap: 35px;
     }
 
+    .photography-portfolio {
+      .namecard {
+        h1 {
+          font-size: 38px;
+        }
+      }
+    }
+
     .bio {
       max-width: 700px;
       padding: 0 25px;
@@ -513,6 +542,14 @@ footer {
           background-size: 18px;
           background-position: 0 8px;
 
+        }
+      }
+    }
+
+    .photography-portfolio {
+      .namecard {
+        h1 {
+          font-size: 32px;
         }
       }
     }
@@ -637,6 +674,14 @@ footer {
       p {
         font-size: 16px;
         line-height: 1.8;
+      }
+    }
+
+    .photography-portfolio {
+      .namecard {
+        h1 {
+          font-size: 32px;
+        }
       }
     }
 
