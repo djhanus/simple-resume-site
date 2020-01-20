@@ -133,7 +133,7 @@
     <h2>About Me</h2>
 
     <div class="container bio">
-      <p>I'm a native-born Hoosier that grew up in the suburbs of Indiana just outside Chicago. I've always had a passion for the creative arts, music, and computers. I lived in Chicago for a number of years pursuing these interests but have since relocated to Nashville, Indiana to put down roots with my new and growing family. I presently live in a log cabin home on the edge of a state forest (with fiber optic internet access) where I enjoy my personal time homesteading with my wife and son: tending to our garden, hiking, fishing, playing banjo, and enjoying the great outdoors. My favorite food is Polish sausage with pierogi and my favorite kind of music is country, folk and bluegrass. I also love movies and my favorite book is The Hobbit.</p>
+      <p>I was born and raised in the Northwest corner of Indiana just outside of Chicago. I've always had a passion for the creative arts, music, and computers. I lived in Chicago for a number of years pursuing these interests but have since relocated to Nashville, Indiana to put down roots with my new and growing family. I presently live in a log cabin home on the edge of a state forest (with fiber optic internet access) where I enjoy my personal time homesteading with my wife and son: tending to our garden, hiking, fishing, playing banjo, and enjoying the great outdoors. My favorite food is Polish sausage with pierogi and my favorite kind of music is country, folk and bluegrass. I also love movies and my favorite book is The Hobbit.</p>
     </div>
 
 

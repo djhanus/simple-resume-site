@@ -2,7 +2,7 @@
 <html class="no-js no-svg">
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+    <title>David J. Hanus - Creative, Developer</title>
 
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
 
