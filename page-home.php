@@ -85,19 +85,19 @@
     <h2>Website Work Samples</h2>
     <div class="container selected-clients">
       <ul>
+        <li> <a href="https://countthekicks.org/" target="_blank">Count the Kicks</a> </li>
+        <li> <a href="https://www.iowafinance.com/" target="_blank">Iowa Finance Authority</a> </li>
+        <li> <a href="https://theartofeducation.edu/" target="_blank">Art of Education University</a> </li>
         <li> <a href="https://bloomhf.org/" target="_blank">Bloomington Health Foundation</a> </li>
         <li> <a href="https://sycamorelandtrust.org/" target="_blank">Sycamore Land Trust</a> </li>
         <li> <a href="https://lorenwoodbuilders.com/" target="_blank">Loren Wood Builders</a> </li>
-        <li> <a href="https://americanlibrariesmagazine.org/" target="_blank">American Libraries Magazine</a> </li>
-        <li> <a href="https://monroecountyhabitat.org/" target="_blank">Habitat for Humanity</a> </li>
-        <li> <a href="https://www.uplandbeer.com/" target="_blank">Upland Brewing Co.</a> </li>
       </ul>
     </div> <!-- /.selected-clients -->
 
     <h2>Other Experience & Skills</h2>
     <div class="container other-skills">
       <ul>
-        <li> Photography 
+        <li> Photography
           <p>undergraduate focus, professional experience as agency and freelance photographer, lifelong hobby and passion </p>
         </li>
         <li> Graphic Design
@@ -148,6 +148,6 @@
       <a href="mailto:davidjhanus@gmail.com"><i class="far fa-envelope"></i></a>
 
   	</div> <!-- /.contact -->
-     
+
   </div>  <!-- / #page-home -->
 <?php get_footer(); ?>
