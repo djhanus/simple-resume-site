@@ -34,7 +34,7 @@
         <i class="fas fa-code"></i>
         <div class="title">Web Development</div>
         <div class="description">
-         custom Wordpress themes, front-end development, responsive and mobile-friendly
+         custom Wordpress themes, full stack development, responsive and mobile-friendly
         </div>
       </div> <!-- /.skill-container -->
 
@@ -62,20 +62,24 @@
         <li> HTML </li>
         <li> CSS </li>
         <li> PHP </li>
-        <li> JS </li>
-        <li> Git </li>
+        <li> jQuery </li>
+        <li> JSON </li>
         <li> Sass </li>
-        <li> Less </li>
+        <li> Bootstrap </li>
+        <li> Git </li>
+        <li> Grunt </li>
+        <li> Gulp </li>
         <li> CLI </li>
         <li> Wordpress </li>
         <li> Drupal </li>
-        <li> MySQL </li>
-        <li> PHPMyAdmin </li>
+        <li> SQL </li>
+        <li> REST </li>
         <li> Apache </li>
         <li> Adobe </li>
         <li> Photoshop </li>
         <li> Illustrator </li>
         <li> InDesign </li>
+        <li> Figma </li>
         <li> MacOSX </li>
         <li> Windows </li>
         <li> Linux </li>
