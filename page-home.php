@@ -13,7 +13,7 @@
       </div>
 
   		<div class="button">
-        <a href="<?php echo get_template_directory_uri(''); ?>/assets/David-J-Hanus-2020-Resume.PDF" target="_blank">Résumé</a>
+        <a href="<?php echo get_template_directory_uri(''); ?>/assets/David-J-Hanus-Resume-2021.PDF" target="_blank">Résumé</a>
       </div>
 
       <div class="container contact-small">
