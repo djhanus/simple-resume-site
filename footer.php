@@ -6,7 +6,7 @@
 	      David J. Hanus <br />
 	    </div> <!-- /.signature -->
 
-  		https://djhanus.online
+  		https://davidjhanus.me
 
 	</div> <!-- /.container -->
   </footer>
