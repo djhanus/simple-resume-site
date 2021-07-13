@@ -137,7 +137,7 @@
     <h2>About Me</h2>
 
     <div class="container bio">
-      <p>I was born and raised in the Northwest corner of Indiana just outside of Chicago. I've always had a passion for the creative arts, music, and computer technology. I lived in Chicago for a number of years pursuing these interests but have since relocated to Nashville, Indiana to put down roots with my growing family. I live in a log cabin home near a state forest with my wife and two sons. In my personal time I enjoy tending to our garden, hiking, playing music, videogames and enjoying the great outdoors.</p>
+      <p>I was born and raised in the Northwest corner of Indiana just outside of Chicago. I've always had a passion for the creative arts, music, and computer technology. I lived in Chicago for a number of years pursuing these interests but have since relocated to Nashville, Indiana to put down roots with my growing family. I live in a log cabin home near a state forest with my wife and two sons. In my personal time I enjoy woodworking, hiking, playing music, videogames and enjoying the great outdoors.</p>
     </div>
 
 
