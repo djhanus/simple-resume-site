@@ -22,3 +22,4 @@ Professional Resume Website.
 - new font?
 - add more color/excitement
 - about me / bio, trim down!!
+- set charset
