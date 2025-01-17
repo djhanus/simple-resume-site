@@ -21,7 +21,7 @@ body {
   font-family: $body;
   height: auto;
   line-height: 1.4;
-  background-color: rgb(255,255,255);
+  background-color: rgb(250,250,250);
 
   p {
     font-family: $body;
@@ -121,6 +121,7 @@ header {
     .introduction {
       margin: 25px auto 0px;
       max-width: 840px;
+      text-align: center;
 
       p {
         color: $gray-dark;
@@ -129,6 +130,7 @@ header {
         line-height: 1.8;
         max-width: 800px;
         margin: 0 auto;
+        text-align: center;
       }
     }
 
@@ -394,7 +396,7 @@ header {
     text-align: center;
     margin: 50px auto;
     height: auto;
-    background-color: rgb(255,255,255);
+    padding: 50px auto;
 
     a {
       text-decoration: none;
@@ -416,7 +418,7 @@ footer {
   text-align: center;
   font-size: 14px;
   color: $gray-medium;
-  background-color: rgb(255,255,255);
+  // background-color: rgb(255,255,255);
   margin: 0;
   padding: 0;
 

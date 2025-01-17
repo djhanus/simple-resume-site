@@ -73,7 +73,7 @@ body {
   font-family: "Lato", sans-serif;
   height: auto;
   line-height: 1.4;
-  background-color: white;
+  background-color: rgb(250, 250, 250);
 }
 html p,
 body p {
@@ -104,7 +104,7 @@ html h2,
 body h2 {
   font-size: 42px;
   margin: 15px 0px;
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
   font-weight: normal;
 }
 
@@ -136,7 +136,7 @@ header {
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: rgb(250, 250, 250);
   /* Container Title */
 }
 #page-home .namecard {
@@ -166,21 +166,23 @@ header {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-size: 30px;
-  color: #7d7d7d;
+  color: rgb(125, 125, 125);
   text-align: center;
   margin: 25px auto;
 }
 #page-home .namecard .introduction {
   margin: 25px auto 0px;
   max-width: 840px;
+  text-align: center;
 }
 #page-home .namecard .introduction p {
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
   font-size: 20px;
   font-family: "Libre Baskerville", serif;
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto;
+  text-align: center;
 }
 #page-home .namecard .button {
   margin: 25px auto;
@@ -213,7 +215,7 @@ header {
 }
 #page-home .namecard .contact-small a.icon {
   text-decoration: none;
-  color: #7d7d7d;
+  color: rgb(125, 125, 125);
 }
 #page-home .namecard .contact-small a.icon i {
   font-size: 26px;
@@ -230,7 +232,7 @@ header {
   display: flex;
 }
 #page-home .core-skills .skill-container {
-  border: 0px solid #7d7d7d;
+  border: 0px solid rgb(125, 125, 125);
   border-radius: 20px;
   width: 33.33%;
   margin: 0 15px;
@@ -240,7 +242,7 @@ header {
 #page-home .core-skills .skill-container i {
   font-size: 48px;
   margin: 20px auto;
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
 }
 #page-home .core-skills .skill-container .title {
   font-size: 20px;
@@ -263,10 +265,10 @@ header {
 }
 #page-home .software-languages ul li {
   font-size: 18px;
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
   line-height: 1;
   padding: 6px 8px;
-  background-color: #f0f0f0;
+  background-color: rgb(240, 240, 240);
   margin-bottom: 10px;
 }
 #page-home .software-languages ul li:nth-child(5n+0):hover {
@@ -295,13 +297,13 @@ header {
 #page-home .other-skills ul li {
   font-size: 24px;
   padding-bottom: 20px;
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
   font-family: "Libre Baskerville", serif;
 }
 #page-home .other-skills ul li p {
   font-size: 18px;
   padding: 5px 0px;
-  color: #7d7d7d;
+  color: rgb(125, 125, 125);
 }
 #page-home .photography {
   display: none;
@@ -309,17 +311,17 @@ header {
   text-align: center;
 }
 #page-home .photography a {
-  color: #7d7d7d;
+  color: rgb(125, 125, 125);
   font-size: 18px;
   text-decoration: none;
 }
 #page-home .photography a:hover {
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
   text-decoration: underline;
 }
 #page-home .photography i {
   font-size: 48px;
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
   text-align: center;
   display: block;
   padding: 15px;
@@ -344,10 +346,9 @@ header {
 #page-home .personal-strengths {
   font-size: 24px;
   font-style: italic;
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
   columns: 3;
-  display: none;
-  /* HIDDEN */
+  display: none; /* HIDDEN */
 }
 #page-home .personal-strengths span.detail {
   display: block;
@@ -356,7 +357,7 @@ header {
 #page-home .personal-strengths i {
   font-size: 32px;
   padding-right: 10px;
-  color: #7d7d7d;
+  color: rgb(125, 125, 125);
 }
 #page-home .selected-clients {
   max-width: 720px;
@@ -376,17 +377,17 @@ header {
 }
 #page-home .selected-clients ul li a {
   text-decoration: none;
-  color: #7d7d7d;
+  color: rgb(125, 125, 125);
 }
 #page-home .selected-clients ul li a:hover {
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
 }
 #page-home .bio {
   margin: 25px auto 0px;
   max-width: 840px;
 }
 #page-home .bio p {
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
   font-size: 20px;
   font-family: "Libre Baskerville", serif;
   line-height: 1.8;
@@ -397,11 +398,11 @@ header {
   text-align: center;
   margin: 50px auto;
   height: auto;
-  background-color: white;
+  padding: 50px auto;
 }
 #page-home .contact a {
   text-decoration: none;
-  color: #7d7d7d;
+  color: rgb(125, 125, 125);
 }
 #page-home .contact a i {
   font-size: 64px;
@@ -414,8 +415,7 @@ header {
 footer {
   text-align: center;
   font-size: 14px;
-  color: #7d7d7d;
-  background-color: white;
+  color: rgb(125, 125, 125);
   margin: 0;
   padding: 0;
 }
@@ -424,7 +424,7 @@ footer .signature {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   text-align: center;
-  color: #3c3c3c;
+  color: rgb(60, 60, 60);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
