@@ -49,6 +49,14 @@ body {
     color: $gray-dark;
     font-weight: normal;
   }
+
+  h3 {
+    font-size: 28px;
+    margin: 15px 0px;
+    color: $gray-dark;
+    font-weight: normal;
+    font-style: italic;
+  }
 }
 
 main {
@@ -190,6 +198,11 @@ header {
     margin-top: 125px;
   }
 
+  h3 {
+    text-align: center;
+    margin-top: 75px;
+  }
+
   .core-skills {
     display: flex;
 
@@ -268,6 +281,21 @@ header {
     max-width: 960px;
     columns: 2;
     column-gap: 60px;
+
+    &.details {
+      columns: 1;
+      max-width: 640px;
+      ul {
+        li {
+          list-style-type: none;
+          text-align: center;
+          padding-bottom: 28px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
 
     ul {
       list-style-type: disc;
